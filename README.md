@@ -3,36 +3,43 @@
 # 1) Maze Pathfinding with AI Search Algorithms
 
 ## Project Overview
-This project involves implementing and experimenting with various search algorithms to solve a maze of dimensions N×N. The algorithms aim to find the shortest path from the start to the end while avoiding a chasing ghost that also uses the A* algorithm to follow the player. This project explores different pathfinding algorithms, compares their complexities, and measures their effectiveness in terms of time and optimality.
+
+This project involves implementing and experimenting with various search algorithms to solve a maze of dimensions N×N. The algorithms aim to find the shortest path from the start to the end while avoiding a chasing ghost that also uses the A* algorithm to follow the player. The project explores different pathfinding algorithms, comparing their complexities, and evaluating their effectiveness in terms of time and optimality.
 
 ## Algorithms Implemented
-In this project, we have implemented several search algorithms to find the shortest path in the maze:
 
-- **Breadth-First Search (BFS)**
-- **Depth-First Search (DFS)**
-- **A\* Algorithm**
-- **Greedy Best-First Search**
-- **Dijkstra’s Algorithm**
+In this project, we have implemented and tested the following search algorithms to find the shortest path in the maze:
+
+1. **Dijkstra Algorithm**: 
+2. **A\* Algorithm (Euclidean)**: 
+   - **Heuristic**: Euclidean distance
+3. **A\* Algorithm (Manhattan)**: 
+   - **Heuristic**: Manhattan distance
+4. **Best-First Algorithm (Euclidean)**: 
+   - **Heuristic**: Euclidean distance
+5. **Best-First Algorithm (Manhattan)**: 
+   - **Heuristic**: Manhattan distance
 
 ### Heuristics
+
 - **Euclidean Distance**: Measures the straight-line distance between two nodes.
 - **Manhattan Distance**: Considers only horizontal and vertical movements between nodes.
 
 ## Features
 
-- **Cost Functions**: Custom cost functions to calculate real and heuristic distances.
-- **Comparative Analysis**: Algorithms are tested on mazes of different sizes, and their performance is compared based on time complexity and optimality.
-- **Ghost Pathfinding**: A dynamic element (ghost) that also runs the A* algorithm, making the pathfinding more challenging.
+- **Comparative Analysis**: Algorithms are tested on mazes of different sizes, and their performance is compared based on time complexity, optimality of the solution, and efficiency.
+- **Ghost Pathfinding**: A dynamic element (ghost) that also runs the A* algorithm, adding a layer of complexity by requiring the pathfinding algorithm to avoid the ghost.
 
 ## How It Works
 
 1. **Maze Generation**: A random N×N maze is generated.
-2. **Algorithm Execution**: Different algorithms are executed to find the shortest path.
-3. **Ghost Avoidance**: While finding the path, the algorithm avoids the ghost that chases the player using its own A* search.
-4. **Performance Analysis**: The algorithms are compared based on:
-   - Time taken to find the solution.
-   - Optimality of the path found.
-   - Complexity in terms of memory and execution.
+2. **Algorithm Execution**: The above-listed algorithms are executed to find the shortest path from the start to the end.
+3. **Ghost Avoidance**: The pathfinding algorithms avoid a ghost that runs its own A* search algorithm, making the pathfinding more challenging.
+4. **Performance Analysis**: The algorithms are evaluated based on:
+   - **Time taken**: How long it takes to find the solution.
+   - **Optimality**: The quality and length of the path found.
+   - **Complexity**: The computational complexity in terms of both time and memory usage.
+
 
 # 2) Movie Recommendation System using Prolog and Python
 
