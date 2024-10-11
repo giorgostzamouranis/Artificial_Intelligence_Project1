@@ -33,3 +33,55 @@ In this project, we have implemented several search algorithms to find the short
    - Time taken to find the solution.
    - Optimality of the path found.
    - Complexity in terms of memory and execution.
+
+# 2) Movie Recommendation System using Prolog and Python
+
+## Project Overview
+
+The aim of this project is to create a **Movie Recommendation System** in Python that utilizes a **Prolog-based world** to process and query movie data. The system leverages data from the `movies_metadata.csv` file, which includes various features of movies, to categorize and recommend films. By using Prolog predicates, the system can provide movie recommendations based on similarity levels and user preferences.
+
+This system is capable of:
+
+- Querying movies based on common attributes.
+- Providing recommendations based on multiple levels of similarity.
+- Incorporating user ratings to improve personalized recommendations.
+
+## Data Processing
+
+### Movies Metadata
+The system processes the `movies_metadata.csv` file to extract key features such as:
+
+- **Genres**
+- **Actors**
+- **Directors**
+- **Keywords**
+
+These features are stored in **literals** (lists) that are used to categorize the films in the Prolog world.
+
+## Prolog World and Predicates
+
+Once the data is processed, a **Prolog world** is created that allows querying of the movie data using predefined predicates. The Prolog file containing the predicates is named `predicates`. Some key functionality includes:
+
+- **Categorical Queries**: You can query movies based on shared characteristics. For example:
+
+    ```prolog
+    give_movies_with_common_genres('Terminator', 3).
+    ```
+
+    This query returns all movies that share three genres with the movie *Terminator*.
+
+- **Recommendation System**: The system uses **five levels of similarity** to recommend movies:
+
+    - **Level 1**: Movies that share one common genre.
+    - **Level 2**: Movies that share one common genre and one common actor.
+    - **Level 3**: And so on, with additional shared features increasing the similarity level.
+
+More details about the predicates and query structure can be found in the `predicates` file.
+
+## User Preferences and Ratings
+
+The system also incorporates user preferences by allowing users to rate films on a scale of 1 to 5. These ratings are used to refine and personalize the recommendations further. As users provide more ratings, the system adjusts its recommendations to better match the user's tastes.
+
+## Evaluation
+
+The system's performance is evaluated using predefined metrics, including accuracy of the recommendations and effectiveness of the similarity levels. The evaluation code, provided in the project prompt, has been processed and extended with additional features to improve the recommendation system.
