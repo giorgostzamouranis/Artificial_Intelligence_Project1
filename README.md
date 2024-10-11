@@ -10,7 +10,7 @@ In this project, we have implemented several search algorithms to find the short
 
 - **Breadth-First Search (BFS)**
 - **Depth-First Search (DFS)**
-- **A* Algorithm**
+- **A\* Algorithm**
 - **Greedy Best-First Search**
 - **Dijkstra’s Algorithm**
 
