@@ -1,6 +1,6 @@
 # Artificial_Intelligence_Project1
 
-# Maze Pathfinding with AI Search Algorithms
+# 1) Maze Pathfinding with AI Search Algorithms
 
 ## Project Overview
 This project involves implementing and experimenting with various search algorithms to solve a maze of dimensions N×N. The algorithms aim to find the shortest path from the start to the end while avoiding a chasing ghost that also uses the A* algorithm to follow the player. This project explores different pathfinding algorithms, compares their complexities, and measures their effectiveness in terms of time and optimality.
